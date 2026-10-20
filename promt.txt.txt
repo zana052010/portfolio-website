@@ -1,0 +1,103 @@
+# Role & Objective
+Act as a Principal Design Engineer and Frontend Architect (specializing in Linear, Vercel, and Raycast web experiences). Build a complete, production-ready personal developer portfolio website using **Vite + Tailwind CSS + Vanilla JS**.
+
+Do NOT use a Bento Grid layout. Instead, build a sleek, structured, editorial-grade engineering website with distinct full-width architectural sections, interactive project showcases, and signature developer features.
+
+Write complete, functional code for all files without placeholders or `// TODO` comments.
+
+---
+
+# 1. STRICT Anti-"AI-Slop" Design System (CRITICAL)
+
+1. **Zero Neon & Zero Cheap Gradients:**
+   - Strictly FORBIDDEN: saturated purple/cyan/magenta gradients (`from-purple-500`, `to-blue-500`, neon glows, blurred colored background blobs, or heavy drop shadows).
+   - **Dark Mode Palette (Default):** Deep architectural obsidian surfaces (`#09090B` main background, `#111113` elevated surface, `#18181B` interactive hover surface, `#FAFAFA` primary text, `#A1A1AA` muted text) with crisp `1px solid rgba(255, 255, 255, 0.08)` hairline structural dividers, subtle top inner highlights (`inset 0 1px 0 0 rgba(255, 255, 255, 0.06)`), and a `2.5%` opacity SVG matte film grain overlay.
+   - **Light Mode Palette:** Warm studio alabaster (`#F8F8F7` background, `#FFFFFF` surface, `#F1F1EF` secondary surface, `#09090B` primary text, `#52525B` muted text) with `1px solid rgba(0, 0, 0, 0.08)` dividers.
+2. **Zero Emojis & Zero Hand-Drawn Fake SVGs:**
+   - Do NOT use a single emoji (no 🚀, 💻, ✨, 🤖, 🎵) anywhere in the UI or JSON data.
+   - Load real official vector brand logos for all languages, frameworks, and OS platforms via **Devicon CDN** (`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/{tech}/{tech}-original.svg`) and **SimpleIcons CDN** (`https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/{slug}.svg`) with an `onerror` fallback handler.
+   - Use **Lucide Icons** (`1.5px` stroke width) for all UI system icons.
+3. **Typography & Editorial Discipline:**
+   - Load **Geist Sans** (or `'Inter'`) for UI/headings with tight tracking (`-0.03em`) and **Geist Mono** (or `'JetBrains Mono'`) for section index numbers (`01 // ARCHITECTURE`), tech tags, metrics, and terminal snippets.
+   - Use crisp structural hairlines (Vercel-style crosshairs `+` at section intersections and `1px` full-bleed horizontal rules) to separate sections cleanly.
+
+---
+
+# 2. Website Architecture & Signature Interactive Features
+
+Build a cohesive, multi-section layout with the following interactive features:
+
+1. **Sticky Glassmorphic Top Navigation Bar:**
+   - Minimalist top bar with developer moniker (`zana052010`), smooth anchor links (`01. Projects`, `02. Architecture`, `03. Tech Stack`, `04. Activity`), a `[⌘K]` Command Palette trigger badge, instant `RU / EN` language switch, and Dark / Light theme toggle.
+   - Includes a clean mobile drawer menu for screens `< 768px`.
+
+2. **Hero Section with Interactive System Terminal / Architecture Preview:**
+   - **Left Column:** Status badge (`Available for Projects` with subtle emerald pulse dot), high-impact headline, concise architectural bio, primary CTA button to GitHub (`https://github.com/zana052010`), and quick keyboard shortcut hint (`Press Ctrl+K to navigate`).
+   - **Right Column:** An interactive, tab-switched **Architecture & Target Platforms Inspector** where visitors can click between `Desktop (Windows / Linux / macOS)`, `Mobile (Android / iOS)`, and `Web (Vite / Vanilla JS)` to see real-time system capabilities, supported formats, and official monochrome OS vector icons.
+
+3. **Interactive Flagship Project Showcase (Split-Screen & Tabbed Deep-Dives):**
+   - Instead of small cards, present projects as rich, interactive case studies with category filter tabs (`All`, `Cross-Platform / .NET`, `Web / Frontend`, `Workflow`):
+   - **Interactive Feature Explorer for the Flagship Music Player:** Allow the user to click through interactive tabs inside the project showcase (`Audio Engine`, `Spectrum Visualizer & EQ`, `Synced Lyrics`, `Cross-Platform UX`) which dynamically update an interactive visual preview / technical schematic right on the page (e.g., an animated CSS/Canvas real-time audio spectrum visualizer demo and equalizer sliders preview!).
+   - Clicking "View Full Technical Specification" opens an accessible deep-dive modal/drawer with complete architectural breakdowns.
+
+4. **Interactive Tech Stack Explorer (Filterable Specification Table):**
+   - An interactive engineering matrix where visitors can filter or hover over core technologies to see how they are used across projects, accompanied by official vector logos and proficiency/role indicators.
+
+5. **Live GitHub Engineering Activity Section (`zana052010`):**
+   - Fetches live public profile data and repositories from `https://api.github.com/users/zana052010` (with graceful local fallback cache), rendering a sleek contribution graph, repository cards, and direct links.
+
+6. **Signature Polish (The "High-Taste" Factor):**
+   - **Raycast-Style Command Palette (`Ctrl+K` / `Cmd+K`):** Keyboard-first modal allowing instant jumping to sections, filtering projects, switching theme/language, or copying the GitHub URL with a sleek toast notification.
+   - **Cursor Spotlight Illumination:** Subtle mouse-tracking radial border/surface illumination on interactive panels.
+   - **Smooth Inertial Scrolling & Section Reveals:** Clean intersection-observer scroll reveals and smooth anchor scrolling.
+
+---
+
+# 3. Developer Profile & Project Data (`src/data/portfolio-data.json`)
+
+CRITICAL RULE: Do NOT mention any APIs, `YoutubeExplode`, or `SoundCloudExplode` anywhere. Focus strictly on core programming languages, frameworks, UI toolkits, and software architecture.
+
+Populate `src/data/portfolio-data.json` and `src/i18n/translations.json` with complete bilingual (`ru` and `en`) content:
+
+- **Developer Profile:**
+  - **GitHub:** `https://github.com/zana052010`
+  - **Role (EN):** `Cross-Platform (.NET / Avalonia UI) & Frontend Developer`
+  - **Role (RU):** `Разработчик кроссплатформенных приложений (.NET / Avalonia UI) и веб-интерфейсов`
+  - **Philosophy:** Modular system architecture, native cross-platform execution across desktop and mobile, and fast, zero-bloat web applications.
+
+- **Projects to Showcase:**
+  1. **Cross-Platform Multi-Source Music Player (Flagship Case Study):**
+     - **Target Platforms:** Windows, Linux, macOS, Android, iOS.
+     - **Core Stack:** `C#`, `.NET`, `Avalonia UI`, `MVVM`.
+     - **Key Architecture & Features:**
+       - Unified multi-source audio engine combining local lossless/compressed playback (`FLAC`, `MP3`, `WAV`, `OGG`) with online streaming sources inside a single modular architecture.
+       - Hybrid unified search, automated metadata and album cover parsing, and unified playlists.
+       - Real-time audio spectrum visualizer, interactive multi-band equalizer, and synchronized lyrics (`LRC`).
+       - Desktop system tray & global hotkeys paired with mobile-adapted bottom navigation.
+     - **Interactive Preview Feature:** Build a live interactive mini-demo directly inside this project's showcase panel (a toggleable real-time animated spectrum visualizer bar graph + interactive equalizer sliders + desktop/mobile layout switch preview).
+
+  2. **Interactive AI & Neural Networks Directory:**
+     - **Core Stack:** `JavaScript (ES6+)`, `HTML5`, `CSS3`, `Vite`, `Tailwind CSS`, `GitHub Actions`.
+     - **Key Features:** High-contrast interactive web directory of modern AI models with instant search, multi-category filtering, benchmark comparison matrix, bilingual (`RU/EN`) dictionary, and automated CI/CD deployment to GitHub Pages.
+
+  3. **Spec-Driven AI Engineering Workflow:**
+     - **Core Stack:** `OpenCode CLI`, `Git`, `GitHub Actions`.
+     - **Highlights:** Modular system design, structured specification engineering, and automated build/deployment pipelines.
+
+- **Core Tech Stack (Strictly NO APIs or scraping libraries):**
+  - **Languages:** `C#`, `JavaScript (ES6+)`, `HTML5`, `CSS3`
+  - **Frameworks & UI Toolkits:** `.NET`, `Avalonia UI`, `Tailwind CSS`, `Vite`
+  - **Architecture & UI Libraries:** `MVVM`, `Lucide`
+  - **Tooling & DevOps:** `Git`, `GitHub Actions`, `GitHub Pages`, `OpenCode CLI`
+
+---
+
+# 4. Mobile Responsiveness & GitHub Pages Deployment (CRITICAL)
+
+1. **Mobile Compatibility (`< 768px`):**
+   - Ensure `<meta name="viewport" content="width=device-width, initial-scale=1.0">` is in `index.html`.
+   - All split-screen sections, interactive tabs, and tables must stack cleanly on mobile screens (`overflow-x: hidden`) with touch-friendly controls (`min-h-[44px]`).
+2. **GitHub Pages Configuration:**
+   - Configure `vite.config.js` with `base: './'`.
+   - Import all JSON files statically via ES module `import` in `src/main.js` (never use runtime `fetch('/src/...')`).
+   - Generate a complete `.github/workflows/deploy.yml` using `npm install` and `npm run build` for automatic deployment to GitHub Pages.

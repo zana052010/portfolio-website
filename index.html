@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en" data-theme="dark" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cross-platform .NET and Avalonia UI developer building native desktop and mobile software, plus fast, zero-bloat web interfaces."
+    />
+    <meta name="author" content="zana052010" />
+    <meta name="theme-color" content="#09090B" id="theme-color-meta" />
+    <meta name="color-scheme" content="dark light" />
+    <meta property="og:title" content="zana052010 — Cross-Platform Developer" />
+    <meta
+      property="og:description"
+      content="Cross-platform .NET and Avalonia UI development, with an architectural approach to desktop, mobile, and web."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <title>zana052010 — Cross-Platform Developer</title>
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('zana-theme');
+          var theme = stored === 'light' || stored === 'dark' ? stored : 'dark';
+          document.documentElement.dataset.theme = theme;
+          document.documentElement.classList.toggle('dark', theme === 'dark');
+          document.documentElement.style.colorScheme = theme;
+          var meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) meta.setAttribute('content', theme === 'dark' ? '#09090B' : '#F8F8F7');
+        } catch (error) {
+          document.documentElement.dataset.theme = 'dark';
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="site-header" id="site-header">
+      <div class="wrap nav-inner">
+        <a class="brand" href="#top" aria-label="zana052010 — home" data-i18n-aria="nav.home">
+          <span class="brand-mark" aria-hidden="true">z</span>
+          <span class="brand-copy">
+            <span class="brand-name">zana052010</span>
+            <span class="brand-tag">/ portfolio</span>
+          </span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Primary" data-i18n-aria="nav.primary">
+          <a href="#projects" class="nav-link" data-nav="projects">
+            <span class="nav-index">01.</span>
+            <span data-i18n="nav.projects">Projects</span>
+          </a>
+          <a href="#architecture" class="nav-link" data-nav="architecture">
+            <span class="nav-index">02.</span>
+            <span data-i18n="nav.architecture">Architecture</span>
+          </a>
+          <a href="#stack" class="nav-link" data-nav="stack">
+            <span class="nav-index">03.</span>
+            <span data-i18n="nav.stack">Tech Stack</span>
+          </a>
+          <a href="#activity" class="nav-link" data-nav="activity">
+            <span class="nav-index">04.</span>
+            <span data-i18n="nav.activity">Activity</span>
+          </a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="command-trigger" type="button" data-command-open aria-haspopup="dialog">
+            <i data-lucide="command" aria-hidden="true"></i>
+            <kbd class="keycap" data-command-key>Ctrl K</kbd>
+          </button>
+
+          <div class="lang-switch" role="group" aria-label="Language" data-i18n-aria="nav.language">
+            <button type="button" data-lang-button="en" class="is-active" aria-pressed="true">EN</button>
+            <span class="lang-divider" aria-hidden="true"></span>
+            <button type="button" data-lang-button="ru" aria-pressed="false">RU</button>
+          </div>
+
+          <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme">
+            <i data-lucide="sun" class="theme-icon theme-icon-sun" aria-hidden="true"></i>
+            <i data-lucide="moon" class="theme-icon theme-icon-moon" aria-hidden="true"></i>
+          </button>
+
+          <button
+            class="icon-btn mobile-menu-toggle"
+            type="button"
+            data-menu-toggle
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            aria-label="Open menu"
+          >
+            <i data-lucide="menu" class="menu-icon-open" aria-hidden="true"></i>
+            <i data-lucide="x" class="menu-icon-close" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true" inert>
+      <nav class="mobile-menu-links" aria-label="Mobile primary" data-i18n-aria="nav.mobilePrimary">
+        <a href="#projects" class="mobile-nav-link" data-mobile-nav>
+          <span class="mobile-nav-index">01</span>
+          <span data-i18n="nav.projects">Projects</span>
+          <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+        </a>
+        <a href="#architecture" class="mobile-nav-link" data-mobile-nav>
+          <span class="mobile-nav-index">02</span>
+          <span data-i18n="nav.architecture">Architecture</span>
+          <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+        </a>
+        <a href="#stack" class="mobile-nav-link" data-mobile-nav>
+          <span class="mobile-nav-index">03</span>
+          <span data-i18n="nav.stack">Tech Stack</span>
+          <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+        </a>
+        <a href="#activity" class="mobile-nav-link" data-mobile-nav>
+          <span class="mobile-nav-index">04</span>
+          <span data-i18n="nav.activity">Activity</span>
+          <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+        </a>
+        <a href="#contact" class="mobile-nav-link" data-mobile-nav>
+          <span class="mobile-nav-index">05</span>
+          <span data-i18n="nav.contact">Contact</span>
+          <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+        </a>
+      </nav>
+      <div class="mobile-menu-foot">
+        <button class="command-trigger command-trigger--wide" type="button" data-command-open aria-haspopup="dialog">
+          <i data-lucide="search" aria-hidden="true"></i>
+          <span data-i18n="nav.openPalette">Search and jump to a section</span>
+          <kbd class="keycap" data-command-key>Ctrl K</kbd>
+        </button>
+        <p class="mono-note" data-i18n="nav.mobileNote">Cross-platform developer · .NET / web</p>
+      </div>
+    </div>
+
+    <main id="main">
+      <section id="top" class="hero" aria-labelledby="hero-title">
+        <div class="hero-grid-bg" aria-hidden="true"></div>
+        <div class="wrap hero-inner">
+          <div class="hero-copy" data-reveal>
+            <div class="hero-status">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span data-i18n="hero.status">Available for projects</span>
+              <span class="status-separator" aria-hidden="true"></span>
+              <span class="status-note" data-i18n="hero.statusNote">Open to select collaborations</span>
+            </div>
+
+            <p class="hero-eyebrow mono-label" data-i18n="hero.eyebrow">Independent developer / .NET &amp; web</p>
+
+            <h1 id="hero-title" class="hero-title">
+              <span data-i18n="hero.titleLine1">Software that runs</span><br class="hero-title-break" />
+              <span class="hero-title-muted" data-i18n="hero.titleLine2">wherever it matters.</span>
+            </h1>
+
+            <p class="hero-role" id="hero-role"></p>
+            <p class="hero-bio" data-i18n="hero.bio">
+              I design modular systems in C# and .NET with Avalonia UI, and ship fast, zero-bloat interfaces on the
+              web. One architectural discipline from desktop to mobile.
+            </p>
+
+            <div class="hero-actions">
+              <a
+                class="btn btn-primary"
+                href="https://github.com/zana052010"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="btn-brand-icon"
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg"
+                  alt=""
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  referrerpolicy="no-referrer"
+                  onerror="this.hidden=true;"
+                />
+                <span data-i18n="hero.cta">View GitHub</span>
+                <i data-lucide="arrow-up-right" class="btn-trailing-icon" aria-hidden="true"></i>
+              </a>
+              <a class="btn btn-ghost" href="#projects">
+                <span data-i18n="hero.secondary">Explore the flagship</span>
+                <i data-lucide="arrow-down" class="btn-trailing-icon" aria-hidden="true"></i>
+              </a>
+            </div>
+
+            <div class="hero-hint">
+              <button type="button" class="hint-key" data-command-open aria-haspopup="dialog">
+                <kbd class="keycap" data-command-key>Ctrl K</kbd>
+                <span data-i18n="hero.hint">Press Ctrl+K to navigate</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-aside" data-reveal>
+            <div class="inspector panel spotlight" id="target-inspector">
+              <div class="inspector-head">
+                <div class="inspector-heading">
+                  <span class="mono-label" data-i18n="hero.inspector.label">Target inspector</span>
+                  <span class="inspector-id">/ 001</span>
+                </div>
+                <div class="inspector-live"><span class="mini-dot" aria-hidden="true"></span><span data-i18n="hero.inspector.live">Live map</span></div>
+              </div>
+
+              <div class="inspector-tabs" role="tablist" id="inspector-tabs" aria-label="Target platform"></div>
+
+              <div class="inspector-body" id="inspector-body"></div>
+
+              <div class="inspector-foot">
+                <span class="inspector-foot-state">
+                  <i data-lucide="shield-check" aria-hidden="true"></i>
+                  <span data-i18n="hero.inspector.verified">Targets verified</span>
+                </span>
+                <span class="mono-label" data-i18n="hero.inspector.footnote">One core · adaptive shell</span>
+              </div>
+
+              <span class="panel-cross panel-cross--tl" aria-hidden="true"></span>
+              <span class="panel-cross panel-cross--br" aria-hidden="true"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrap">
+          <div class="hero-metrics" data-reveal aria-label="Portfolio metrics" data-i18n-aria="hero.metrics.label">
+            <div class="metric">
+              <span class="metric-value">05</span>
+              <span class="metric-label" data-i18n="hero.metrics.platforms">target platforms</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">03</span>
+              <span class="metric-label" data-i18n="hero.metrics.systems">selected systems</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">01</span>
+              <span class="metric-label" data-i18n="hero.metrics.core">shared architecture</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">00</span>
+              <span class="metric-label" data-i18n="hero.metrics.frameworks">web UI frameworks</span>
+            </div>
+            <div class="metric metric-note">
+              <span class="mono-note" data-i18n="hero.metrics.note">Engineered for native behavior, not visual noise.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section" aria-labelledby="projects-title">
+        <div class="wrap">
+          <div class="section-topline">
+            <span class="section-index mono-label" data-i18n="projects.index">01 / Projects</span>
+            <span class="mono-label section-meta" data-i18n="projects.meta">Selected work · 2025—2026</span>
+          </div>
+          <div class="section-heading">
+            <h2 id="projects-title" class="section-title">
+              <span data-i18n="projects.title">Selected systems,</span><br />
+              <span class="muted-text" data-i18n="projects.titleMuted">not screenshots.</span>
+            </h2>
+            <p class="section-description" data-i18n="projects.description">
+              Three builds, one discipline: explicit boundaries, native behavior, and interfaces that stay out of the
+              way. Open a case file for the full technical read.
+            </p>
+          </div>
+
+          <div class="filter-bar">
+            <span class="filter-caption mono-label" data-i18n="projects.filtersLabel">Filter</span>
+            <div
+              class="filter-tabs"
+              id="project-filters"
+              role="group"
+              aria-label="Filter projects"
+              data-i18n-aria="projects.filterAria"
+            ></div>
+            <span class="filter-count mono-label" id="project-count"></span>
+          </div>
+
+          <div id="flagship-slot"></div>
+          <div id="project-list" class="project-list"></div>
+          <p class="empty-state" id="projects-empty" hidden data-i18n="projects.empty">No projects in this category.</p>
+        </div>
+      </section>
+
+      <section id="architecture" class="section" aria-labelledby="architecture-title">
+        <div class="wrap">
+          <div class="section-topline">
+            <span class="section-index mono-label" data-i18n="architecture.index">02 / Architecture</span>
+            <span class="mono-label section-meta" data-i18n="architecture.meta">System design notes</span>
+          </div>
+          <div class="section-heading">
+            <h2 id="architecture-title" class="section-title">
+              <span data-i18n="architecture.title">One core.</span><br />
+              <span class="muted-text" data-i18n="architecture.titleMuted">Five native surfaces.</span>
+            </h2>
+            <p class="section-description" data-i18n="architecture.description">
+              Platform details belong at the edge. The center of the system stays small, typed, and testable. Select a
+              layer to read its contract.
+            </p>
+          </div>
+
+          <div class="blueprint" data-reveal>
+            <div class="blueprint-map">
+              <div class="blueprint-map-head">
+                <span class="mono-label" data-i18n="architecture.layersLabel">Layer map</span>
+                <span class="mono-note" data-i18n="architecture.layersHint">Select a layer</span>
+              </div>
+              <div
+                class="layer-list"
+                id="layer-list"
+                role="tablist"
+                aria-label="Architecture layers"
+                data-i18n-aria="architecture.layerAria"
+              ></div>
+            </div>
+            <div class="blueprint-detail" id="layer-detail" role="tabpanel"></div>
+          </div>
+
+          <div class="principle-head">
+            <span class="mono-label" data-i18n="architecture.principlesLabel">Rules of the system</span>
+            <span class="hairline-fill" aria-hidden="true"></span>
+          </div>
+          <div class="principles" id="principles"></div>
+
+          <div class="matrix-head">
+            <div>
+              <span class="mono-label" data-i18n="architecture.matrixLabel">Capability matrix</span>
+              <p class="matrix-caption" data-i18n="architecture.matrixCaption">
+                How one core reaches five targets without forking the domain.
+              </p>
+            </div>
+            <span class="mono-note" data-i18n="architecture.matrixNote">Desktop · mobile · web</span>
+          </div>
+          <div class="matrix-wrap" id="capability-matrix"></div>
+
+          <div class="pipeline">
+            <div class="pipeline-head">
+              <span class="mono-label" data-i18n="architecture.pipelineLabel">Delivery pipeline</span>
+              <span class="mono-note" data-i18n="architecture.pipelineNote">Specification to production</span>
+            </div>
+            <div class="pipeline-track" id="pipeline-track"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="stack" class="section" aria-labelledby="stack-title">
+        <div class="wrap">
+          <div class="section-topline">
+            <span class="section-index mono-label" data-i18n="stack.index">03 / Tech Stack</span>
+            <span class="mono-label section-meta" data-i18n="stack.meta">Working set · 14 tools</span>
+          </div>
+          <div class="section-heading">
+            <h2 id="stack-title" class="section-title">
+              <span data-i18n="stack.title">The working set.</span><br />
+              <span class="muted-text" data-i18n="stack.titleMuted">Chosen, not collected.</span>
+            </h2>
+            <p class="section-description" data-i18n="stack.description">
+              A deliberately small toolchain. Filter the matrix or inspect a row to see the role each technology plays
+              and where it has been applied.
+            </p>
+          </div>
+
+          <div class="stack-layout">
+            <div class="stack-main">
+              <div class="stack-filter-bar">
+                <div
+                  class="filter-tabs"
+                  id="stack-filters"
+                  role="group"
+                  aria-label="Filter technologies"
+                  data-i18n-aria="stack.filterAria"
+                ></div>
+                <span class="filter-count mono-label" id="stack-count"></span>
+              </div>
+              <div class="tech-table-head" aria-hidden="true">
+                <span data-i18n="stack.table.technology">Technology</span>
+                <span data-i18n="stack.table.role">Role</span>
+                <span data-i18n="stack.table.level">Level</span>
+                <span data-i18n="stack.table.used">Applied in</span>
+              </div>
+              <div class="tech-table" id="tech-table"></div>
+            </div>
+            <aside class="stack-detail panel spotlight" id="tech-detail" aria-live="polite"></aside>
+          </div>
+        </div>
+      </section>
+
+      <section id="activity" class="section" aria-labelledby="activity-title">
+        <div class="wrap">
+          <div class="section-topline">
+            <span class="section-index mono-label" data-i18n="activity.index">04 / Activity</span>
+            <span class="mono-label section-meta">GitHub / zana052010</span>
+          </div>
+          <div class="section-heading">
+            <h2 id="activity-title" class="section-title">
+              <span data-i18n="activity.title">Built in public.</span><br />
+              <span class="muted-text" data-i18n="activity.titleMuted">Quietly, in commits.</span>
+            </h2>
+            <p class="section-description" data-i18n="activity.description">
+              A live read of the public GitHub profile: recent repositories, shipping activity, and the cadence behind
+              them. Cached locally when the network is not available.
+            </p>
+          </div>
+
+          <div class="github-top">
+            <div class="github-profile panel spotlight" id="github-profile">
+              <div class="skeleton-block skeleton-profile"></div>
+            </div>
+            <div class="github-graph panel spotlight" id="github-graph">
+              <div class="skeleton-block skeleton-graph"></div>
+            </div>
+          </div>
+
+          <div class="repo-head">
+            <span class="mono-label" data-i18n="activity.recentRepos">Recent repositories</span>
+            <a
+              class="inline-link mono-label"
+              href="https://github.com/zana052010?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span data-i18n="activity.allRepos">All repositories</span>
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="repo-grid" id="repo-grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="wrap">
+        <div class="footer-topline">
+          <span class="section-index mono-label" data-i18n="footer.index">05 / Contact</span>
+          <span class="mono-label section-meta" data-i18n="footer.meta">Open a channel</span>
+        </div>
+
+        <div class="footer-cta-row" data-reveal>
+          <h2 class="footer-title">
+            <span data-i18n="footer.title">Have a system in mind?</span><br />
+            <span class="muted-text" data-i18n="footer.titleMuted">Let's give it an architecture.</span>
+          </h2>
+          <a
+            class="cta-link"
+            href="https://github.com/zana052010"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Start a conversation on GitHub"
+            data-i18n-aria="footer.ctaAria"
+          >
+            <span class="cta-link-label" data-i18n="footer.cta">Start on GitHub</span>
+            <span class="cta-link-icon"><i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+          </a>
+        </div>
+
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="brand brand--footer">
+              <span class="brand-mark" aria-hidden="true">z</span>
+              <span class="brand-copy">
+                <span class="brand-name">zana052010</span>
+                <span class="brand-tag">/ portfolio</span>
+              </span>
+            </div>
+            <p class="footer-role" id="footer-role"></p>
+            <p class="footer-note" data-i18n="footer.availability">Open to remote collaboration and select product work.</p>
+          </div>
+
+          <nav class="footer-nav" aria-label="Footer" data-i18n-aria="nav.footer">
+            <span class="mono-label footer-col-title" data-i18n="footer.indexLabel">Index</span>
+            <a href="#projects"><span data-i18n="nav.projects">Projects</span><span class="footer-nav-index">01</span></a>
+            <a href="#architecture"><span data-i18n="nav.architecture">Architecture</span><span class="footer-nav-index">02</span></a>
+            <a href="#stack"><span data-i18n="nav.stack">Tech Stack</span><span class="footer-nav-index">03</span></a>
+            <a href="#activity"><span data-i18n="nav.activity">Activity</span><span class="footer-nav-index">04</span></a>
+          </nav>
+
+          <div class="footer-meta">
+            <div class="footer-meta-block">
+              <span class="mono-label footer-col-title" data-i18n="footer.timeLabel">Local time</span>
+              <span class="footer-clock" id="local-clock">--:--:--</span>
+            </div>
+            <div class="footer-meta-block">
+              <span class="mono-label footer-col-title" data-i18n="footer.statusLabel">Status</span>
+              <span class="footer-status"><span class="status-dot status-dot--small" aria-hidden="true"></span><span data-i18n="hero.status">Available for projects</span></span>
+            </div>
+            <div class="footer-link-row">
+              <a
+                href="https://github.com/zana052010"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer-external"
+              >
+                github.com/zana052010
+                <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+              </a>
+              <button type="button" class="footer-command" data-command-open aria-haspopup="dialog">
+                <i data-lucide="command" aria-hidden="true"></i>
+                <span data-i18n="footer.palette">Command menu</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-colophon">
+            <span data-i18n="footer.colophon">Type set in Geist / Geist Mono. Built with Vite, Tailwind CSS, and vanilla JavaScript.</span>
+          </p>
+          <p class="footer-copyright">© <span id="current-year">2026</span> zana052010</p>
+          <a href="#top" class="back-to-top">
+            <span data-i18n="footer.top">Back to top</span>
+            <i data-lucide="arrow-up" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="project-dialog" id="project-dialog"></dialog>
+
+    <div class="palette-overlay" id="command-palette" hidden>
+      <div class="palette" role="dialog" aria-modal="true" aria-labelledby="palette-input" aria-describedby="palette-help">
+        <div class="palette-search">
+          <i data-lucide="search" aria-hidden="true"></i>
+          <input
+            id="palette-input"
+            class="palette-input"
+            type="text"
+            autocomplete="off"
+            spellcheck="false"
+            placeholder="Search sections, projects, or actions…"
+            aria-label="Command palette search"
+            aria-controls="palette-results"
+            role="combobox"
+            aria-expanded="true"
+            aria-autocomplete="list"
+          />
+          <kbd class="keycap">Esc</kbd>
+        </div>
+        <div class="palette-results" id="palette-results" role="listbox" aria-label="Commands"></div>
+        <div class="palette-footer" id="palette-help">
+          <span class="palette-keyhint"><kbd class="keycap">↑</kbd><kbd class="keycap">↓</kbd><span data-i18n="palette.navigate">navigate</span></span>
+          <span class="palette-keyhint"><kbd class="keycap">↵</kbd><span data-i18n="palette.select">select</span></span>
+          <span class="palette-keyhint"><kbd class="keycap">Esc</kbd><span data-i18n="palette.close">close</span></span>
+          <span class="palette-brand mono-label">zana052010 / command</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite">
+      <i data-lucide="check" aria-hidden="true"></i>
+      <span id="toast-message"></span>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1348 @@
+{
+  "profile": {
+    "moniker": "zana052010",
+    "name": "zaNna",
+    "github": "https://github.com/zana052010",
+    "role": {
+      "en": "Cross-Platform (.NET / Avalonia UI) & Frontend Developer",
+      "ru": "Разработчик кроссплатформенных приложений (.NET / Avalonia UI) и веб-интерфейсов"
+    },
+    "philosophy": {
+      "en": "Modular system architecture, native cross-platform execution across desktop and mobile, and fast, zero-bloat web applications.",
+      "ru": "Модульная архитектура систем, нативное кроссплатформенное выполнение на десктопе и мобильных устройствах, быстрые веб-приложения без лишнего веса."
+    }
+  },
+  "targets": [
+    {
+      "id": "desktop",
+      "icon": "monitor",
+      "tabLabel": {
+        "en": "Desktop",
+        "ru": "Десктоп"
+      },
+      "title": {
+        "en": "Windows / Linux / macOS",
+        "ru": "Windows / Linux / macOS"
+      },
+      "description": {
+        "en": "A dense native shell that belongs on the desktop: a real window, a tray presence, and playback that survives focus changes.",
+        "ru": "Плотная нативная оболочка для десктопа: настоящее окно, иконка в системном трее и воспроизведение, которое не прерывается при смене фокуса."
+      },
+      "systems": [
+        {
+          "name": "Windows",
+          "slug": "windows",
+          "logo": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/windows.svg"
+        },
+        {
+          "name": "Linux",
+          "slug": "linux",
+          "logo": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linux.svg"
+        },
+        {
+          "name": "macOS",
+          "slug": "apple",
+          "logo": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/apple.svg"
+        }
+      ],
+      "specs": [
+        {
+          "key": "runtime",
+          "value": {
+            "en": ".NET · Avalonia UI",
+            "ru": ".NET · Avalonia UI"
+          }
+        },
+        {
+          "key": "presentation",
+          "value": {
+            "en": "MVVM · compiled bindings",
+            "ru": "MVVM · скомпилированные привязки"
+          }
+        },
+        {
+          "key": "media",
+          "value": {
+            "en": "FLAC · MP3 · WAV · OGG",
+            "ru": "FLAC · MP3 · WAV · OGG"
+          }
+        },
+        {
+          "key": "integration",
+          "value": {
+            "en": "System tray · global hotkeys",
+            "ru": "Системный трей · глобальные горячие клавиши"
+          }
+        },
+        {
+          "key": "delivery",
+          "value": {
+            "en": "Self-contained builds",
+            "ru": "Самодостаточные сборки"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "icon": "smartphone",
+      "tabLabel": {
+        "en": "Mobile",
+        "ru": "Мобильные"
+      },
+      "title": {
+        "en": "Android / iOS",
+        "ru": "Android / iOS"
+      },
+      "description": {
+        "en": "The same view models behind a thumb-first shell, with safe-area aware navigation and background playback.",
+        "ru": "Те же view-модели в оболочке, рассчитанной на большой палец: навигация с учётом safe area и фоновое воспроизведение."
+      },
+      "systems": [
+        {
+          "name": "Android",
+          "slug": "android",
+          "logo": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/android.svg"
+        },
+        {
+          "name": "iOS",
+          "slug": "ios",
+          "logo": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/ios.svg"
+        }
+      ],
+      "specs": [
+        {
+          "key": "runtime",
+          "value": {
+            "en": ".NET · Avalonia UI",
+            "ru": ".NET · Avalonia UI"
+          }
+        },
+        {
+          "key": "presentation",
+          "value": {
+            "en": "MVVM · adaptive views",
+            "ru": "MVVM · адаптивные представления"
+          }
+        },
+        {
+          "key": "media",
+          "value": {
+            "en": "FLAC · MP3 · WAV · OGG",
+            "ru": "FLAC · MP3 · WAV · OGG"
+          }
+        },
+        {
+          "key": "integration",
+          "value": {
+            "en": "Background audio · lock screen",
+            "ru": "Фоновое аудио · экран блокировки"
+          }
+        },
+        {
+          "key": "delivery",
+          "value": {
+            "en": "Android & iOS packages",
+            "ru": "Пакеты для Android и iOS"
+          }
+        }
+      ]
+    },
+    {
+      "id": "web",
+      "icon": "globe",
+      "tabLabel": {
+        "en": "Web",
+        "ru": "Веб"
+      },
+      "title": {
+        "en": "Vite / Vanilla JavaScript",
+        "ru": "Vite / Vanilla JavaScript"
+      },
+      "description": {
+        "en": "A zero-framework interface where the design system is the dependency. Vite builds it; the browser runs it.",
+        "ru": "Интерфейс без фреймворка, где дизайн-система и есть зависимость. Vite собирает, браузер исполняет."
+      },
+      "systems": [
+        {
+          "name": "Chrome",
+          "slug": "googlechrome",
+          "logo": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/googlechrome.svg"
+        },
+        {
+          "name": "Firefox",
+          "slug": "firefox",
+          "logo": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/firefox.svg"
+        },
+        {
+          "name": "Safari",
+          "slug": "safari",
+          "logo": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/safari.svg"
+        }
+      ],
+      "specs": [
+        {
+          "key": "runtime",
+          "value": {
+            "en": "Vite · ES modules",
+            "ru": "Vite · ES-модули"
+          }
+        },
+        {
+          "key": "presentation",
+          "value": {
+            "en": "Vanilla JS · semantic HTML",
+            "ru": "Vanilla JS · семантический HTML"
+          }
+        },
+        {
+          "key": "media",
+          "value": {
+            "en": "CSS3 · SVG · Canvas",
+            "ru": "CSS3 · SVG · Canvas"
+          }
+        },
+        {
+          "key": "integration",
+          "value": {
+            "en": "Keyboard-first · reduced motion",
+            "ru": "Клавиатура · reduced motion"
+          }
+        },
+        {
+          "key": "delivery",
+          "value": {
+            "en": "Relative build · GitHub Pages",
+            "ru": "Относительная сборка · GitHub Pages"
+          }
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "music-player",
+      "index": "01",
+      "category": "cross-platform",
+      "flagship": true,
+      "year": "2026",
+      "status": {
+        "en": "In active development",
+        "ru": "В активной разработке"
+      },
+      "title": {
+        "en": "Multi-Source Music Player",
+        "ru": "Мультиисточниковый музыкальный плеер"
+      },
+      "subtitle": {
+        "en": "A cross-platform audio workspace",
+        "ru": "Кроссплатформенная аудиорабочая среда"
+      },
+      "summary": {
+        "en": "One modular player for local lossless libraries and online sources, rebuilt from the audio engine up for five platforms.",
+        "ru": "Единый модульный плеер для локальных lossless-библиотек и онлайн-источников, спроектированный с аудиодвижка под пять платформ."
+      },
+      "role": {
+        "en": "System architecture · UI engineering",
+        "ru": "Архитектура системы · UI-инженерия"
+      },
+      "platforms": [
+        {
+          "name": "Windows",
+          "logo": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/windows.svg"
+        },
+        {
+          "name": "Linux",
+          "logo": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linux.svg"
+        },
+        {
+          "name": "macOS",
+          "logo": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/apple.svg"
+        },
+        {
+          "name": "Android",
+          "logo": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/android.svg"
+        },
+        {
+          "name": "iOS",
+          "logo": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/apple.svg"
+        }
+      ],
+      "stack": ["C#", ".NET", "Avalonia UI", "MVVM"],
+      "features": [
+        {
+          "id": "engine",
+          "icon": "audio-waveform",
+          "preview": "engine",
+          "tab": {
+            "en": "Audio Engine",
+            "ru": "Аудиодвижок"
+          },
+          "body": {
+            "en": "A unified playback pipeline decodes FLAC, MP3, WAV, and OGG alongside online sources, then hands one normalized stream to the output layer. Metadata, artwork, and playlists are reconciled before the first sample plays.",
+            "ru": "Единый конвейер воспроизведения декодирует FLAC, MP3, WAV и OGG вместе с онлайн-источниками и отдаёт выходному слою один нормализованный поток. Метаданные, обложки и плейлисты согласуются до первого сэмпла."
+          },
+          "points": [
+            {
+              "en": "Format-agnostic decoder chain with gapless hand-off",
+              "ru": "Независимая от формата цепочка декодеров с бесшовным переходом"
+            },
+            {
+              "en": "One library and playlist model across local and remote tracks",
+              "ru": "Единая модель библиотеки и плейлистов для локальных и удалённых треков"
+            },
+            {
+              "en": "Asynchronous metadata and artwork resolution",
+              "ru": "Асинхронное разрешение метаданных и обложек"
+            }
+          ]
+        },
+        {
+          "id": "spectrum",
+          "icon": "sliders-horizontal",
+          "preview": "spectrum",
+          "tab": {
+            "en": "Spectrum & EQ",
+            "ru": "Спектр и эквалайзер"
+          },
+          "body": {
+            "en": "A real-time spectrum feeds the visualizer while a five-band equalizer shapes the output without touching the source buffer. The interface stays responsive at playback speed.",
+            "ru": "Спектр в реальном времени питает визуализатор, а пятиполосный эквалайзер формирует выход, не затрагивая исходный буфер. Интерфейс остаётся отзывчивым на скорости воспроизведения."
+          },
+          "points": [
+            {
+              "en": "Real-time FFT spectrum with smoothed bar decay",
+              "ru": "Спектр на основе FFT с плавным затуханием столбцов"
+            },
+            {
+              "en": "Five interactive bands with flat, warm, and bright presets",
+              "ru": "Пять интерактивных полос с пресетами «ровный», «тёплый» и «яркий»"
+            },
+            {
+              "en": "Visualizer and audio path share one render clock",
+              "ru": "Визуализатор и аудиотракт используют единый рендер-такт"
+            }
+          ]
+        },
+        {
+          "id": "lyrics",
+          "icon": "captions",
+          "preview": "lyrics",
+          "tab": {
+            "en": "Synced Lyrics",
+            "ru": "Синхронные тексты"
+          },
+          "body": {
+            "en": "LRC parsing with drift correction keeps every line aligned to the transport. Focus mode strips the interface back to typography, artwork, and time.",
+            "ru": "Разбор LRC с коррекцией дрейфа удерживает каждую строку в такте с транспортом. Режим фокуса оставляет только типографику, обложку и время."
+          },
+          "points": [
+            {
+              "en": "LRC import with timestamp normalization",
+              "ru": "Импорт LRC с нормализацией временных меток"
+            },
+            {
+              "en": "Line-level highlight driven by the same transport clock",
+              "ru": "Подсветка строк по тому же транспортному таймеру"
+            },
+            {
+              "en": "Distraction-free focus view on desktop and mobile",
+              "ru": "Режим фокуса без отвлечений на десктопе и мобильных"
+            }
+          ]
+        },
+        {
+          "id": "ux",
+          "icon": "monitor-smartphone",
+          "preview": "ux",
+          "tab": {
+            "en": "Cross-Platform UX",
+            "ru": "Кроссплатформенный UX"
+          },
+          "body": {
+            "en": "Desktop keeps the tray, global hotkeys, and dense library views. Mobile recomposes the same view models into a thumb-first navigation shell with safe-area awareness.",
+            "ru": "На десктопе остаются трей, глобальные горячие клавиши и плотные представления библиотеки. На мобильных те же view-модели собираются в навигацию для большого пальца с учётом safe area."
+          },
+          "points": [
+            {
+              "en": "One view-model layer, two deliberate shells",
+              "ru": "Один слой view-моделей, две осознанные оболочки"
+            },
+            {
+              "en": "Desktop tray and global media hotkeys",
+              "ru": "Трей на десктопе и глобальные медиагорячие клавиши"
+            },
+            {
+              "en": "Mobile bottom navigation with background playback",
+              "ru": "Нижняя навигация на мобильных с фоновым воспроизведением"
+            }
+          ]
+        }
+      ],
+      "spec": {
+        "overview": {
+          "en": "The player is built as a layered system rather than a collection of platform projects. Decoding, library state, playback orchestration, and presentation are separate contracts. Desktop and mobile are adaptive surfaces over the same core, so a fix in the domain reaches every target.",
+          "ru": "Плеер построен как слоистая система, а не набор платформенных проектов. Декодирование, состояние библиотеки, оркестрация воспроизведения и представление разделены контрактами. Десктоп и мобильные — адаптивные поверхности над одним ядром, поэтому исправление в домене доходит до каждой цели."
+        },
+        "metrics": [
+          {
+            "value": "05",
+            "label": {
+              "en": "target platforms",
+              "ru": "целевых платформ"
+            }
+          },
+          {
+            "value": "04",
+            "label": {
+              "en": "audio formats",
+              "ru": "аудиоформата"
+            }
+          },
+          {
+            "value": "01",
+            "label": {
+              "en": "unified queue",
+              "ru": "единая очередь"
+            }
+          }
+        ],
+        "architecture": [
+          {
+            "title": {
+              "en": "Audio pipeline",
+              "ru": "Аудиоконвейер"
+            },
+            "body": {
+              "en": "Converts every source into one normalized stream. Decoders remain isolated from playback state and can fail without taking the transport down.",
+              "ru": "Преобразует каждый источник в один нормализованный поток. Декодеры изолированы от состояния воспроизведения и могут отказать, не останавливая транспорт."
+            }
+          },
+          {
+            "title": {
+              "en": "Library domain",
+              "ru": "Домен библиотеки"
+            },
+            "body": {
+              "en": "Normalizes tracks, albums, artists, artwork, and playlists into shared models used by every surface.",
+              "ru": "Нормализует треки, альбомы, исполнителей, обложки и плейлисты в общие модели для всех поверхностей."
+            }
+          },
+          {
+            "title": {
+              "en": "Playback orchestration",
+              "ru": "Оркестрация воспроизведения"
+            },
+            "body": {
+              "en": "Transport, queue, repeat, shuffle, session restore, and lyric timing live in one service with no UI dependencies.",
+              "ru": "Транспорт, очередь, повтор, перемешивание, восстановление сессии и тайминг текста живут в одном сервисе без зависимостей от UI."
+            }
+          },
+          {
+            "title": {
+              "en": "Presentation state",
+              "ru": "Состояние представления"
+            },
+            "body": {
+              "en": "MVVM view models expose commands and observable state. Views choose density and layout; they never reach into the domain.",
+              "ru": "View-модели MVVM предоставляют команды и наблюдаемое состояние. Представления выбирают плотность и раскладку, но не проникают в домен."
+            }
+          },
+          {
+            "title": {
+              "en": "Platform adapters",
+              "ru": "Платформенные адаптеры"
+            },
+            "body": {
+              "en": "Tray, hotkeys, notifications, file pickers, and audio devices sit at the edge behind small interfaces.",
+              "ru": "Трей, горячие клавиши, уведомления, выбор файлов и аудиоустройства находятся на краю системы за небольшими интерфейсами."
+            }
+          }
+        ],
+        "capabilities": [
+          {
+            "en": "Hybrid unified search across local and online catalogs",
+            "ru": "Гибридный единый поиск по локальному и онлайн-каталогам"
+          },
+          {
+            "en": "Automated metadata and album cover parsing",
+            "ru": "Автоматический разбор метаданных и обложек альбомов"
+          },
+          {
+            "en": "Unified playlists across sources",
+            "ru": "Единые плейлисты из разных источников"
+          },
+          {
+            "en": "Interactive multi-band equalizer with presets",
+            "ru": "Интерактивный многополосный эквалайзер с пресетами"
+          },
+          {
+            "en": "Real-time spectrum visualization",
+            "ru": "Визуализация спектра в реальном времени"
+          },
+          {
+            "en": "Synchronized LRC lyrics with focus mode",
+            "ru": "Синхронные тексты LRC с режимом фокуса"
+          }
+        ],
+        "delivery": [
+          {
+            "en": "Desktop: Windows, Linux, and macOS self-contained builds",
+            "ru": "Десктоп: самодостаточные сборки для Windows, Linux и macOS"
+          },
+          {
+            "en": "Mobile: Android and iOS shells over the same presentation layer",
+            "ru": "Мобильные: оболочки Android и iOS над тем же слоем представления"
+          },
+          {
+            "en": "Adaptive interaction: tray and hotkeys on desktop, bottom navigation on mobile",
+            "ru": "Адаптивное взаимодействие: трей и горячие клавиши на десктопе, нижняя навигация на мобильных"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ai-directory",
+      "index": "02",
+      "category": "web",
+      "flagship": false,
+      "year": "2026",
+      "status": {
+        "en": "Shipped",
+        "ru": "Выпущен"
+      },
+      "title": {
+        "en": "Interactive AI & Neural Networks Directory",
+        "ru": "Интерактивный каталог AI и нейронных сетей"
+      },
+      "subtitle": {
+        "en": "A searchable model atlas",
+        "ru": "Атлас моделей с быстрым поиском"
+      },
+      "summary": {
+        "en": "A bilingual, high-contrast directory for modern AI models with instant search, category filters, and a benchmark comparison matrix.",
+        "ru": "Двуязычный контрастный каталог современных AI-моделей с мгновенным поиском, категориями и матрицей сравнения бенчмарков."
+      },
+      "role": {
+        "en": "Frontend engineering · Information design",
+        "ru": "Фронтенд · Информационный дизайн"
+      },
+      "platforms": [
+        {
+          "name": "Chrome",
+          "logo": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/googlechrome.svg"
+        },
+        {
+          "name": "Firefox",
+          "logo": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/firefox.svg"
+        },
+        {
+          "name": "Safari",
+          "logo": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/safari.svg"
+        },
+        {
+          "name": "Vite",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"
+        }
+      ],
+      "stack": ["JavaScript (ES6+)", "HTML5", "CSS3", "Vite", "Tailwind CSS", "GitHub Actions"],
+      "spec": {
+        "overview": {
+          "en": "A static directory that behaves like a tool, not a brochure. Model records are normalized at rest, then searched and filtered entirely in the browser. The bilingual dictionary updates in place, the comparison matrix aligns benchmark scales, and the build deploys through a GitHub Actions pipeline to GitHub Pages.",
+          "ru": "Статический каталог, который ведёт себя как инструмент, а не брошюра. Записи моделей нормализованы, поиск и фильтрация работают целиком в браузере. Двуязычный словарь обновляется на месте, матрица выравнивает шкалы бенчмарков, а сборка уходит на GitHub Pages через GitHub Actions."
+        },
+        "metrics": [
+          {
+            "value": "00",
+            "label": {
+              "en": "framework runtime",
+              "ru": "фреймворк-рантайма"
+            }
+          },
+          {
+            "value": "02",
+            "label": {
+              "en": "languages",
+              "ru": "языка"
+            }
+          },
+          {
+            "value": "01",
+            "label": {
+              "en": "static build",
+              "ru": "статическая сборка"
+            }
+          }
+        ],
+        "architecture": [
+          {
+            "title": {
+              "en": "Static data layer",
+              "ru": "Статический слой данных"
+            },
+            "body": {
+              "en": "Normalized model records are imported at build time. Navigation never waits on a network request.",
+              "ru": "Нормализованные записи моделей импортируются на этапе сборки. Навигация не ждёт сетевого запроса."
+            }
+          },
+          {
+            "title": {
+              "en": "Search and filter core",
+              "ru": "Ядро поиска и фильтрации"
+            },
+            "body": {
+              "en": "Token matching combines with multi-category filters. Results update instantly while the URL state stays shareable.",
+              "ru": "Токенный поиск сочетается с фильтрами по категориям. Результаты обновляются мгновенно, а состояние остаётся в адресе страницы."
+            }
+          },
+          {
+            "title": {
+              "en": "Benchmark matrix",
+              "ru": "Матрица бенчмарков"
+            },
+            "body": {
+              "en": "Scores are normalized for side-by-side reading, with units and caveats visible rather than hidden in tooltips.",
+              "ru": "Оценки нормализованы для сравнения рядом, а единицы и оговорки видны, а не спрятаны в подсказках."
+            }
+          },
+          {
+            "title": {
+              "en": "Bilingual dictionary",
+              "ru": "Двуязычный словарь"
+            },
+            "body": {
+              "en": "Russian and English content share one layout contract, so switching language causes no structural shift.",
+              "ru": "Русский и английский контент используют один контракт раскладки, поэтому переключение языка не ломает структуру."
+            }
+          },
+          {
+            "title": {
+              "en": "Delivery pipeline",
+              "ru": "Конвейер поставки"
+            },
+            "body": {
+              "en": "GitHub Actions builds the static output and publishes it to GitHub Pages on every verified change.",
+              "ru": "GitHub Actions собирает статический результат и публикует его на GitHub Pages при каждом проверенном изменении."
+            }
+          }
+        ],
+        "capabilities": [
+          {
+            "en": "Instant search across names, creators, and categories",
+            "ru": "Мгновенный поиск по названиям, авторам и категориям"
+          },
+          {
+            "en": "Multi-category filtering with clear active state",
+            "ru": "Фильтрация по нескольким категориям с явным активным состоянием"
+          },
+          {
+            "en": "Benchmark comparison matrix for direct reading",
+            "ru": "Матрица сравнения бенчмарков для прямого чтения"
+          },
+          {
+            "en": "Russian and English interface with saved preference",
+            "ru": "Русский и английский интерфейс с сохранением выбора"
+          },
+          {
+            "en": "High-contrast typography tuned for fast scanning",
+            "ru": "Контрастная типографика, рассчитанная на быстрое сканирование"
+          },
+          {
+            "en": "Automated CI/CD deployment to GitHub Pages",
+            "ru": "Автоматическая поставка через CI/CD на GitHub Pages"
+          }
+        ],
+        "delivery": [
+          {
+            "en": "Vite production build with relative asset paths",
+            "ru": "Продакшен-сборка Vite с относительными путями к ресурсам"
+          },
+          {
+            "en": "GitHub Actions verification and deployment",
+            "ru": "Проверка и развёртывание через GitHub Actions"
+          },
+          {
+            "en": "Static hosting on GitHub Pages with no server runtime",
+            "ru": "Статический хостинг на GitHub Pages без серверного рантайма"
+          }
+        ]
+      }
+    },
+    {
+      "id": "workflow",
+      "index": "03",
+      "category": "workflow",
+      "flagship": false,
+      "year": "2026",
+      "status": {
+        "en": "Operating",
+        "ru": "В работе"
+      },
+      "title": {
+        "en": "Spec-Driven AI Engineering Workflow",
+        "ru": "Инженерный процесс на основе спецификаций"
+      },
+      "subtitle": {
+        "en": "Intent, contracts, verification",
+        "ru": "Замысел, контракты, проверка"
+      },
+      "summary": {
+        "en": "A repeatable way to turn intent into shipped software: written specifications, explicit architecture, small verified increments, and automated delivery.",
+        "ru": "Воспроизводимый способ превращать замысел в работающее ПО: письменные спецификации, явная архитектура, небольшие проверенные шаги и автоматическая поставка."
+      },
+      "role": {
+        "en": "Systems design · Delivery engineering",
+        "ru": "Проектирование систем · Инженерная поставка"
+      },
+      "platforms": [
+        {
+          "name": "GitHub Actions",
+          "logo": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/githubactions.svg"
+        },
+        {
+          "name": "Git",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+        },
+        {
+          "name": "OpenCode",
+          "logo": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/opencode.svg"
+        }
+      ],
+      "stack": ["OpenCode CLI", "Git", "GitHub Actions"],
+      "spec": {
+        "overview": {
+          "en": "The workflow treats the specification as an artifact, not a conversation. Requirements become explicit contracts; contracts become small implementation units; every unit passes through verification before delivery. The result is a repository where intent, code, and history remain legible together.",
+          "ru": "Процесс относится к спецификации как к артефакту, а не разговору. Требования становятся явными контрактами, контракты — небольшими единицами реализации, и каждая единица проходит проверку перед поставкой. В результате замысел, код и история остаются читаемыми вместе."
+        },
+        "metrics": [
+          {
+            "value": "05",
+            "label": {
+              "en": "delivery stages",
+              "ru": "этапов поставки"
+            }
+          },
+          {
+            "value": "03",
+            "label": {
+              "en": "core tools",
+              "ru": "основных инструмента"
+            }
+          },
+          {
+            "value": "01",
+            "label": {
+              "en": "source of truth",
+              "ru": "источник истины"
+            }
+          }
+        ],
+        "architecture": [
+          {
+            "title": {
+              "en": "Specification as source",
+              "ru": "Спецификация как источник"
+            },
+            "body": {
+              "en": "Scope, constraints, and acceptance criteria are written before implementation and versioned with the code.",
+              "ru": "Объём, ограничения и критерии приёмки пишутся до реализации и версионируются вместе с кодом."
+            }
+          },
+          {
+            "title": {
+              "en": "Work decomposition",
+              "ru": "Декомпозиция работы"
+            },
+            "body": {
+              "en": "Each change is small enough to describe, review, and reverse. Dependencies are explicit, not inferred mid-build.",
+              "ru": "Каждое изменение достаточно мало, чтобы его описать, проверить и откатить. Зависимости явны, а не выясняются по ходу сборки."
+            }
+          },
+          {
+            "title": {
+              "en": "Verification gates",
+              "ru": "Ворота проверки"
+            },
+            "body": {
+              "en": "Type checks, build output, accessibility, and responsive behavior are checked before a change is considered complete.",
+              "ru": "Проверка типов, сборка, доступность и адаптивность подтверждаются до того, как изменение считается завершённым."
+            }
+          },
+          {
+            "title": {
+              "en": "History as documentation",
+              "ru": "История как документация"
+            },
+            "body": {
+              "en": "Atomic commits and descriptive pull requests make architectural decisions readable after the fact.",
+              "ru": "Атомарные коммиты и описательные pull request'ы делают архитектурные решения читаемыми постфактум."
+            }
+          },
+          {
+            "title": {
+              "en": "Automated delivery",
+              "ru": "Автоматическая поставка"
+            },
+            "body": {
+              "en": "GitHub Actions owns the build and release path. Manual deployment steps are removed wherever possible.",
+              "ru": "GitHub Actions отвечает за сборку и выпуск. Ручные шаги развёртывания убраны там, где это возможно."
+            }
+          }
+        ],
+        "capabilities": [
+          {
+            "en": "Written specifications that survive implementation",
+            "ru": "Письменные спецификации, которые переживают реализацию"
+          },
+          {
+            "en": "Small, reversible implementation units",
+            "ru": "Небольшие обратимые единицы реализации"
+          },
+          {
+            "en": "Verification built into the change loop",
+            "ru": "Проверка, встроенная в цикл изменений"
+          },
+          {
+            "en": "Readable commit history and review surface",
+            "ru": "Читаемая история коммитов и поверхность ревью"
+          },
+          {
+            "en": "Automated build and deployment",
+            "ru": "Автоматическая сборка и развёртывание"
+          }
+        ],
+        "delivery": [
+          {
+            "en": "Specification and acceptance criteria committed with the work",
+            "ru": "Спецификация и критерии приёмки коммитятся вместе с работой"
+          },
+          {
+            "en": "Repository-level review of architecture and behavior",
+            "ru": "Ревью архитектуры и поведения на уровне репозитория"
+          },
+          {
+            "en": "GitHub Actions build and release path",
+            "ru": "Путь сборки и выпуска через GitHub Actions"
+          }
+        ]
+      }
+    }
+  ],
+  "tech": [
+    {
+      "id": "csharp",
+      "name": "C#",
+      "category": "languages",
+      "level": 5,
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg",
+      "monogram": "C#",
+      "role": {
+        "en": "Domain & application logic",
+        "ru": "Доменная и прикладная логика"
+      },
+      "description": {
+        "en": "Primary language for domain models, playback orchestration, typed services, and the desktop and mobile application core.",
+        "ru": "Основной язык для доменных моделей, оркестрации воспроизведения, типизированных сервисов и ядра десктопного и мобильного приложений."
+      },
+      "usedIn": ["music-player"]
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript (ES6+)",
+      "category": "languages",
+      "level": 4,
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+      "monogram": "JS",
+      "role": {
+        "en": "Interactive web layer",
+        "ru": "Интерактивный веб-слой"
+      },
+      "description": {
+        "en": "Vanilla ES modules for state, filtering, keyboard navigation, and the live GitHub read. No framework runtime in the bundle.",
+        "ru": "Vanilla ES-модули для состояния, фильтрации, клавиатурной навигации и живого чтения GitHub. Без фреймворк-рантайма в бандле."
+      },
+      "usedIn": ["ai-directory"]
+    },
+    {
+      "id": "html5",
+      "name": "HTML5",
+      "category": "languages",
+      "level": 4,
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+      "monogram": "HTML",
+      "role": {
+        "en": "Semantic structure",
+        "ru": "Семантическая структура"
+      },
+      "description": {
+        "en": "Semantic document structure, accessible controls, and metadata that keeps the interface legible to machines and people.",
+        "ru": "Семантическая структура документа, доступные элементы управления и метаданные, понятные и машинам, и людям."
+      },
+      "usedIn": ["ai-directory"]
+    },
+    {
+      "id": "css3",
+      "name": "CSS3",
+      "category": "languages",
+      "level": 4,
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+      "monogram": "CSS",
+      "role": {
+        "en": "Design system & layout",
+        "ru": "Дизайн-система и вёрстка"
+      },
+      "description": {
+        "en": "Design tokens, responsive grids, hairline structure, and motion that yields to reduced-motion preferences.",
+        "ru": "Дизайн-токены, адаптивные сетки, волосяная структура и анимация, уважающая настройку reduced motion."
+      },
+      "usedIn": ["ai-directory"]
+    },
+    {
+      "id": "dotnet",
+      "name": ".NET",
+      "category": "frameworks",
+      "level": 5,
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg",
+      "monogram": ".NET",
+      "role": {
+        "en": "Runtime & packaging",
+        "ru": "Среда выполнения и сборка"
+      },
+      "description": {
+        "en": "Application hosting, dependency injection, background services, packaging, and the shared runtime beneath every target.",
+        "ru": "Хостинг приложения, внедрение зависимостей, фоновые сервисы, упаковка и общий рантайм под каждой целью."
+      },
+      "usedIn": ["music-player"]
+    },
+    {
+      "id": "avalonia",
+      "name": "Avalonia UI",
+      "category": "frameworks",
+      "level": 4,
+      "logo": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/avaloniaui.svg",
+      "monogram": "AV",
+      "role": {
+        "en": "Cross-platform presentation",
+        "ru": "Кроссплатформенное представление"
+      },
+      "description": {
+        "en": "Cross-platform presentation layer: adaptive views, native window chrome, mobile navigation, and one control language across targets.",
+        "ru": "Кроссплатформенный слой представления: адаптивные представления, нативное оформление окон, мобильная навигация и единый язык контролов на всех целях."
+      },
+      "usedIn": ["music-player"]
+    },
+    {
+      "id": "tailwind",
+      "name": "Tailwind CSS",
+      "category": "frameworks",
+      "level": 4,
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      "monogram": "TW",
+      "role": {
+        "en": "Utility styling layer",
+        "ru": "Утилитарный слой стилей"
+      },
+      "description": {
+        "en": "A constrained utility layer mapped to the design tokens. Layout stays explicit and the shipped stylesheet stays small.",
+        "ru": "Ограниченный утилитарный слой, привязанный к дизайн-токенам. Раскладка остаётся явной, а итоговый CSS — небольшим."
+      },
+      "usedIn": ["ai-directory"]
+    },
+    {
+      "id": "vite",
+      "name": "Vite",
+      "category": "frameworks",
+      "level": 4,
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg",
+      "monogram": "V",
+      "role": {
+        "en": "Build & delivery",
+        "ru": "Сборка и поставка"
+      },
+      "description": {
+        "en": "Development server and production build with relative asset paths, static imports, and a minimal runtime footprint.",
+        "ru": "Dev-сервер и продакшен-сборка с относительными путями, статическими импортами и минимальным рантаймом."
+      },
+      "usedIn": ["ai-directory"]
+    },
+    {
+      "id": "mvvm",
+      "name": "MVVM",
+      "category": "architecture",
+      "level": 4,
+      "logo": null,
+      "icon": "layers",
+      "monogram": "MV",
+      "role": {
+        "en": "Presentation architecture",
+        "ru": "Архитектура представления"
+      },
+      "description": {
+        "en": "View models own UI state and commands. Views stay declarative; the domain stays unaware of presentation.",
+        "ru": "View-модели владеют состоянием интерфейса и командами. Представления остаются декларативными, домен не знает о представлении."
+      },
+      "usedIn": ["music-player"]
+    },
+    {
+      "id": "lucide",
+      "name": "Lucide",
+      "category": "architecture",
+      "level": 3,
+      "logo": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/lucide.svg",
+      "monogram": "LU",
+      "role": {
+        "en": "Icon system",
+        "ru": "Иконочная система"
+      },
+      "description": {
+        "en": "One icon family at a 1.5px stroke, rendered inline so every control shares the same optical weight.",
+        "ru": "Единое семейство иконок с обводкой 1.5px, встроенное в разметку, чтобы все элементы имели одинаковый оптический вес."
+      },
+      "usedIn": ["portfolio"]
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "category": "devops",
+      "level": 4,
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+      "monogram": "GIT",
+      "role": {
+        "en": "Version control",
+        "ru": "Контроль версий"
+      },
+      "description": {
+        "en": "Atomic commits, deliberate branches, and readable history as part of the engineering record.",
+        "ru": "Атомарные коммиты, осознанные ветки и читаемая история как часть инженерной записи."
+      },
+      "usedIn": ["music-player", "ai-directory", "workflow"]
+    },
+    {
+      "id": "actions",
+      "name": "GitHub Actions",
+      "category": "devops",
+      "level": 4,
+      "logo": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/githubactions.svg",
+      "monogram": "GA",
+      "role": {
+        "en": "Automation",
+        "ru": "Автоматизация"
+      },
+      "description": {
+        "en": "Every change passes through a build and verification pipeline before it reaches production.",
+        "ru": "Каждое изменение проходит через конвейер сборки и проверки, прежде чем попасть в продакшен."
+      },
+      "usedIn": ["ai-directory", "workflow"]
+    },
+    {
+      "id": "pages",
+      "name": "GitHub Pages",
+      "category": "devops",
+      "level": 3,
+      "logo": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/githubpages.svg",
+      "monogram": "GP",
+      "role": {
+        "en": "Static hosting",
+        "ru": "Статический хостинг"
+      },
+      "description": {
+        "en": "Static, relative-path deployment for the directory and this portfolio. No server, no drift.",
+        "ru": "Статическое развёртывание с относительными путями для каталога и этого портфолио. Без сервера и расхождений."
+      },
+      "usedIn": ["ai-directory"]
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode CLI",
+      "category": "devops",
+      "level": 4,
+      "logo": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/opencode.svg",
+      "monogram": "OC",
+      "role": {
+        "en": "Spec-driven workflow",
+        "ru": "Процесс на основе спецификаций"
+      },
+      "description": {
+        "en": "Spec-driven implementation and refactoring inside the repository, with verification as part of the loop.",
+        "ru": "Реализация и рефакторинг по спецификации внутри репозитория, где проверка встроена в цикл."
+      },
+      "usedIn": ["workflow"]
+    }
+  ],
+  "architecture": {
+    "layers": [
+      {
+        "id": "shell",
+        "code": "01",
+        "name": {
+          "en": "Application shell",
+          "ru": "Оболочка приложения"
+        },
+        "subtitle": {
+          "en": "Views · navigation · adaptive layout",
+          "ru": "Представления · навигация · адаптивность"
+        },
+        "description": {
+          "en": "The surface the user touches. Desktop keeps dense controls and a real window; mobile recomposes the same content for one-handed use.",
+          "ru": "Поверхность, с которой работает пользователь. На десктопе — плотные контролы и настоящее окно; на мобильных тот же контент пересобран для одной руки."
+        },
+        "responsibilities": [
+          {
+            "en": "Render state, never own it",
+            "ru": "Отрисовывать состояние, не владеть им"
+          },
+          {
+            "en": "Adapt density and navigation per target",
+            "ru": "Адаптировать плотность и навигацию под цель"
+          },
+          {
+            "en": "Keep accessibility semantics intact",
+            "ru": "Сохранять семантику доступности"
+          }
+        ],
+        "rule": {
+          "en": "May reference presentation state only. No domain or platform calls from a view.",
+          "ru": "Может обращаться только к состоянию представления. Никаких вызовов домена или платформы из представления."
+        },
+        "tech": ["Avalonia UI", "HTML5", "CSS3", "Tailwind CSS"]
+      },
+      {
+        "id": "presentation",
+        "code": "02",
+        "name": {
+          "en": "Presentation state",
+          "ru": "Состояние представления"
+        },
+        "subtitle": {
+          "en": "MVVM · commands · observable state",
+          "ru": "MVVM · команды · наблюдаемое состояние"
+        },
+        "description": {
+          "en": "View models translate domain events into interface state. They can be tested without a window, a page, or a device.",
+          "ru": "View-модели переводят события домена в состояние интерфейса. Их можно тестировать без окна, страницы или устройства."
+        },
+        "responsibilities": [
+          {
+            "en": "Expose commands and observable properties",
+            "ru": "Предоставлять команды и наблюдаемые свойства"
+          },
+          {
+            "en": "Coordinate view-level workflows",
+            "ru": "Координировать сценарии уровня представления"
+          },
+          {
+            "en": "Map domain failures into readable states",
+            "ru": "Превращать ошибки домена в понятные состояния"
+          }
+        ],
+        "rule": {
+          "en": "May reference the domain and platform interfaces. Never references concrete views.",
+          "ru": "Может обращаться к домену и интерфейсам платформы. Никогда не ссылается на конкретные представления."
+        },
+        "tech": ["MVVM", "C#", ".NET"]
+      },
+      {
+        "id": "domain",
+        "code": "03",
+        "name": {
+          "en": "Domain core",
+          "ru": "Доменное ядро"
+        },
+        "subtitle": {
+          "en": "Playback · library · search · playlists · lyrics",
+          "ru": "Воспроизведение · библиотека · поиск · плейлисты · тексты"
+        },
+        "description": {
+          "en": "The invariants of the product live here: what a queue is, how sources merge, when a lyric line becomes active, and what survives a restart.",
+          "ru": "Здесь живут инварианты продукта: что такое очередь, как объединяются источники, когда строка текста становится активной и что переживает перезапуск."
+        },
+        "responsibilities": [
+          {
+            "en": "Own playback and queue invariants",
+            "ru": "Владеть инвариантами воспроизведения и очереди"
+          },
+          {
+            "en": "Unify local and online library models",
+            "ru": "Объединять модели локальной и онлайн-библиотеки"
+          },
+          {
+            "en": "Keep timing logic independent of UI",
+            "ru": "Держать логику тайминга независимой от UI"
+          }
+        ],
+        "rule": {
+          "en": "Depends on abstractions only. No UI toolkit, operating system, or storage implementation.",
+          "ru": "Зависит только от абстракций. Без UI-тулкита, операционной системы или реализации хранилища."
+        },
+        "tech": ["C#", ".NET"]
+      },
+      {
+        "id": "adapters",
+        "code": "04",
+        "name": {
+          "en": "Platform adapters",
+          "ru": "Платформенные адаптеры"
+        },
+        "subtitle": {
+          "en": "Tray · hotkeys · storage · audio devices · notifications",
+          "ru": "Трей · горячие клавиши · хранилище · аудиоустройства · уведомления"
+        },
+        "description": {
+          "en": "Everything that differs between Windows, Linux, macOS, Android, and iOS is implemented at the edge behind a shared contract.",
+          "ru": "Всё, что различается между Windows, Linux, macOS, Android и iOS, реализовано на краю системы за общим контрактом."
+        },
+        "responsibilities": [
+          {
+            "en": "Implement platform-specific capabilities",
+            "ru": "Реализовывать платформенные возможности"
+          },
+          {
+            "en": "Translate native events into domain events",
+            "ru": "Переводить нативные события в события домена"
+          },
+          {
+            "en": "Degrade gracefully where a feature is absent",
+            "ru": "Аккуратно деградировать там, где возможности нет"
+          }
+        ],
+        "rule": {
+          "en": "Implements domain interfaces. Never leaks native types into the core.",
+          "ru": "Реализует интерфейсы домена. Никогда не протаскивает нативные типы в ядро."
+        },
+        "tech": ["Avalonia UI", ".NET", "GitHub Actions"]
+      },
+      {
+        "id": "infrastructure",
+        "code": "05",
+        "name": {
+          "en": "Infrastructure & delivery",
+          "ru": "Инфраструктура и поставка"
+        },
+        "subtitle": {
+          "en": "Persistence · providers · builds · CI",
+          "ru": "Хранение · провайдеры · сборки · CI"
+        },
+        "description": {
+          "en": "Persistence, remote catalogs, build definitions, and release automation. This layer is replaceable without touching the interface.",
+          "ru": "Хранение, удалённые каталоги, описание сборки и автоматизация выпуска. Этот слой заменяем без изменения интерфейса."
+        },
+        "responsibilities": [
+          {
+            "en": "Provide concrete storage and catalog clients",
+            "ru": "Предоставлять конкретные клиенты хранения и каталогов"
+          },
+          {
+            "en": "Build reproducible artifacts",
+            "ru": "Собирать воспроизводимые артефакты"
+          },
+          {
+            "en": "Automate verification and release",
+            "ru": "Автоматизировать проверку и выпуск"
+          }
+        ],
+        "rule": {
+          "en": "Composition root only. The domain receives interfaces; this layer supplies implementations.",
+          "ru": "Только корень композиции. Домен получает интерфейсы; этот слой поставляет реализации."
+        },
+        "tech": ["Vite", "Git", "GitHub Actions", "GitHub Pages"]
+      }
+    ],
+    "matrix": {
+      "platforms": ["Windows", "Linux", "macOS", "Android", "iOS"],
+      "rows": [
+        {
+          "capability": {
+            "en": "Unified library & playlists",
+            "ru": "Единая библиотека и плейлисты"
+          },
+          "support": [true, true, true, true, true]
+        },
+        {
+          "capability": {
+            "en": "Real-time spectrum & EQ",
+            "ru": "Спектр и эквалайзер в реальном времени"
+          },
+          "support": [true, true, true, true, true]
+        },
+        {
+          "capability": {
+            "en": "Synced LRC lyrics",
+            "ru": "Синхронные тексты LRC"
+          },
+          "support": [true, true, true, true, true]
+        },
+        {
+          "capability": {
+            "en": "Tray & global hotkeys",
+            "ru": "Трей и глобальные горячие клавиши"
+          },
+          "support": [true, true, true, false, false]
+        },
+        {
+          "capability": {
+            "en": "Touch-first mobile shell",
+            "ru": "Мобильная оболочка для касаний"
+          },
+          "support": [false, false, false, true, true]
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "id": "spec",
+        "step": {
+          "en": "Specification",
+          "ru": "Спецификация"
+        },
+        "note": {
+          "en": "Intent, constraints, and acceptance criteria written first.",
+          "ru": "Замысел, ограничения и критерии приёмки — сначала."
+        }
+      },
+      {
+        "id": "contracts",
+        "step": {
+          "en": "Contracts",
+          "ru": "Контракты"
+        },
+        "note": {
+          "en": "Boundaries and interfaces named before implementation.",
+          "ru": "Границы и интерфейсы называются до реализации."
+        }
+      },
+      {
+        "id": "build",
+        "step": {
+          "en": "Implementation",
+          "ru": "Реализация"
+        },
+        "note": {
+          "en": "Small increments, each complete enough to verify.",
+          "ru": "Небольшие шаги, каждый достаточно завершён для проверки."
+        }
+      },
+      {
+        "id": "verify",
+        "step": {
+          "en": "Verification",
+          "ru": "Проверка"
+        },
+        "note": {
+          "en": "Build, behavior, accessibility, and responsiveness.",
+          "ru": "Сборка, поведение, доступность и адаптивность."
+        }
+      },
+      {
+        "id": "ship",
+        "step": {
+          "en": "Delivery",
+          "ru": "Поставка"
+        },
+        "note": {
+          "en": "Automated release through GitHub Actions.",
+          "ru": "Автоматический выпуск через GitHub Actions."
+        }
+      }
+    ]
+  }
+}
