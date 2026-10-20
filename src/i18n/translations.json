@@ -278,7 +278,7 @@
       "top": "Back to top"
     },
     "palette": {
-      "placeholder": "Search commands, projects, or sections…",
+      "placeholder": "Search commands or projects…",
       "aria": "Command palette",
       "navigate": "navigate",
       "select": "select",
@@ -597,7 +597,7 @@
       "top": "Наверх"
     },
     "palette": {
-      "placeholder": "Поиск команд, проектов и разделов…",
+      "placeholder": "Поиск команд и проектов…",
       "aria": "Командная палитра",
       "navigate": "навигация",
       "select": "выбрать",

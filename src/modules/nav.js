@@ -13,7 +13,7 @@ export function initNav() {
   const themeButton = document.querySelector('[data-theme-toggle]');
   const main = document.getElementById('main');
   const footer = document.getElementById('contact');
-  const mq = window.matchMedia('(min-width: 901px)');
+  const mq = window.matchMedia('(min-width: 961px)');
 
   if (!header || !menu || !menuToggle) return;
 
